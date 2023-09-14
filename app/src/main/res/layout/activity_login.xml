@@ -7,11 +7,27 @@
     android:background="@drawable/Masuk_Bg"
     tools:context=".Login">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:src="@drawable/arrow_back"
+        app:backgroundTint="#1C665C"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:maxImageSize="50dp" />
+
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:textColor="#1C665C"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,11 +40,11 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="#000"
@@ -37,16 +53,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview"
-        app:layout_constraintVertical_bias="0.050" />
+        app:layout_constraintVertical_bias="0.050"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="kata Sandi"
+        android:hint="@string/kata_sandi"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#000"
@@ -55,7 +73,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email"
-        app:layout_constraintVertical_bias="0.050" />
+        app:layout_constraintVertical_bias="0.050"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
 
     <CheckBox
         android:id="@+id/cek"
@@ -71,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Tetap Masuk"
+        android:text="@string/tetap_masuk"
         android:textColor="#1C665C"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@id/cek"
@@ -83,23 +103,26 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="25dp"
-        android:text="Masuk"
-        android:textSize="20sp"
         android:padding="10dp"
+        android:text="@string/masuk"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tetap"/>
+        app:layout_constraintTop_toBottomOf="@+id/tetap"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Belum memiliki akun? Daftar"
-        android:textSize="15dp"
+        android:text="@string/belum_memiliki_akun_daftar"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/daftar"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
