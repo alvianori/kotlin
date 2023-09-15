@@ -47,10 +47,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -67,7 +68,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/daftar"
-                app:layout_constraintVertical_bias="1.0">
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
                     android:id="@+id/textView"
@@ -119,7 +120,7 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="20dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="E-mail"
@@ -161,9 +162,12 @@
                 android:text="@string/masuk"
                 android:textSize="20sp"
                 app:cornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
