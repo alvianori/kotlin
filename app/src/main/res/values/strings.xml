@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">MobileApp</string>
+    <string name="app_name">Geofish</string>
     <string name="belum_memiliki_akun_daftar">Belum memiliki akun? Daftar</string>
     <string name="email">email</string>
     <string name="kata_sandi">kata Sandi</string>
     <string name="masuk">Masuk</string>
     <string name="tetap_masuk">Tetap Masuk</string>
+    <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
